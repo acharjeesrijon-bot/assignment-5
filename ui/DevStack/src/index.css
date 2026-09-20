@@ -51,5 +51,84 @@ body {
 
 .nav-buttons button:last-child {
   color: white;
-  background: linear-gradient(90deg, #ff7a18, #ff3d81, #8b5cf6);
+  background: linear-gradient(90deg, #ff7a18, oklab(64.897% 0.12996 0.12349), #8b5cf6);
+}
+
+:root {
+  --gradient: linear-gradient(90deg, #ff7a18, #dc5c38, #8b5cf6);
+}
+
+.hero {
+  max-width: 1100px;
+  min-height: 500px;
+  margin: 0 auto;
+  padding: 80px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 60px;
+}
+
+.hero-content {
+  max-width: 580px;
+}
+
+.hero h1 {
+  margin-bottom: 22px;
+  font-size: 52px;
+  line-height: 1.08;
+  color: #111827;
+}
+
+.hero h1 span {
+  display: block;
+  background: var(--gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hero-content p {
+  max-width: 520px;
+  margin-bottom: 30px;
+  color: #64748b;
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 12px;
+}
+
+.hero-buttons a {
+  padding: 13px 20px;
+  border-radius: 7px;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.hero-buttons a:first-child {
+  color: white;
+  background: var(--gradient);
+}
+
+.hero-buttons a:last-child {
+  color: #374151;
+  background: white;
+  border: 1px solid #d9dee7;
+}
+
+.hero-visual {
+  width: 430px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-visual img {
+  width: 100%;
+  max-width: 420px;
+  height: auto;
+  display: block;
 }
